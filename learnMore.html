@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src= img/bg.jpg class="banner banner2">
+
+    <div class="box3">
+      <h2>Our goal</h2>
+      <p>The biggest cities in the world is being polluted by the large amounts of fossil fuels that the cities releases. And the air quality is counted as “unhealthy” for the inhabitants of the cities. We want to change this bad trend by making GreenWalls. GreenWalls is exactly what it sounds like, a wall that is green. The green coulure does not come from green paint, but green plants. These green plants take up CO2 and release oxygen through the photosynthesis. Every city in the world have a lot of buildings with walls that is not being “used”, often filled mud, graffiti, and other things. We want to fill this wall with green plants. We know that this alone cant save the world, but we think it is a step in the right direction.</p>
+    </div>
+
+    <div class="box4 container2">
+      <h2>Do you wanne help?</h2>
+      <p>The world is facing the biggest climate change in history. Our globe is getting warmer, the glacier melts and our cities is getting polluted by all our CO2 emission. We cannot save the planet alone, but with your help we can get one step closer to a greener planet, a planet our next generation can live a happy life on. You can help us by spreading the word, be engaged and make green choices. </p>
+      <p>If you want help some more, we are gathering signatures to start our project. To sign pleas press the “Signature” button under.</p>
+
+      <p><button id="myBtn" class="button2 buttonbg2">Signature</button></p>
+
+
+      <div id="myModal" class="modal">
+
+        <div class="modal-content color">
+          <span class="close">&times;</span>
+          <h2>Signature</h2>
+          <p><div class=>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+
+    <label for="subject">Email</label>
+    <textarea id="subject" name="subject" placeholder="Your email.." style="height:33px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</p>
+        </div>
+
+      </div>
+    
+
+      <script>
+
+      var modal = document.getElementById("myModal");
+
+      var btn = document.getElementById("myBtn");
+
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+    </div>
+  </body>
+  </html>
